@@ -26,7 +26,7 @@ minGPA<-min(ClassData$GPA)
 minGPA   #display
 maxGPA<-max(ClassData$GPA)
 maxGPA   #display
-medGPA=median(ClassData$GPA)
+medGPA<-median(ClassData$GPA)
 medGPA   #display
 
 #Second way using dplyr
@@ -55,7 +55,7 @@ minYWEx<-min(ClassData$YWEx)
 minYWEx   #display
 maxYWEx<-max(ClassData$YWEx)
 maxYWEx   #display
-medYWEx=median(ClassData$YWEx)
+medYWEx<-median(ClassData$YWEx)
 medYWEx   #display
 
 #Second way using dplyr
