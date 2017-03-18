@@ -18,8 +18,11 @@ RUN echo "r <- getOption('repos'); r['CRAN'] <- 'http://cran.us.r-project.org'; 
 RUN Rscript -e "install.packages('stringr')"
 RUN Rscript -e "install.packages('leaps')"
 RUN Rscript -e "install.packages('ISLR')"
-RUN Rscript -e "install.packages('stringr')"
 RUN Rscript -e "install.packages('forecast')"
+RUN Rscript -e "install.packages('MASS')"
+RUN Rscript -e "install.packages('grid')"
+RUN Rscript -e "install.packages('neuralnet')"
+RUN Rscript -e "install.packages('randomForest')"
 
 # Add the R script we want to include in the image.
 COPY ./prediction.R /home/docker/prediction.R
